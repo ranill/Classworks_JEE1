@@ -1,0 +1,58 @@
+package mytraining;
+
+public class Trainee {
+
+
+		public static void main(String[] args) {
+		
+// fire class to input trainee data
+			Traineedata rl = new Traineedata();
+	    
+	      	        
+// call Batch class with overloaded 	        
+			Batch batchDetails = new Batch();
+	        batchDetails.getTrainee(100);
+	        batchDetails.getTrainees("Male");
+	        
+			
+		}
+			
+}
+
+-------------- // ------------------------
+package mytraining;
+
+public class Batch {
+
+		public int batchCode;
+		public String startDate;
+		public String endDate;
+		public String trainee;
+		public int traineeId;
+		public String gender;
+			
+	  
+	public void getTrainee(int traineeId) {
+		System.out.println("Trainee ID" + traineeId);
+	}
+
+	public void getTrainees(String gender) {
+		System.out.println("Gender    " + gender);
+	}
+
+	}
+
+----------------- // -------------------
+package mytraining;
+
+public class Traineedata {
+		
+		public int traineeId;
+		private String traineeName;			
+		private String contactNo;
+		private String email;
+
+public void readInputs() {
+	
+}
+}
