@@ -1,0 +1,70 @@
+package myproject;
+
+public class ProjectClass {
+	private int projectId;
+    private String projectName;
+    private String projectHead; 
+    private int noOfResources; 
+    
+    //setter for project ID
+    public void setprojectId(int projectId) {
+    	this.projectId = projectId;
+        }
+    
+    //setter for project name
+    public void setprojectName(String projectName) {
+    	this.projectName = projectName;
+    	    }
+    
+    //setter for project head 
+    public void setprojectHead(String projectHead) {
+    	this.projectHead = projectHead;
+    }
+    
+    //setter for number of resources
+    public void setnoOfResources(int noOfResources) {
+    	this.noOfResources = noOfResources;
+            }
+    //getter for project ID
+    public int getprojectId() {
+    	return projectId; 
+    	    }
+    
+    //getter for project name
+    public String getprojectName(){
+    	return projectName; 
+        }
+    
+    //getter for project head 
+    public String getprojectHead() {
+    	return projectHead; 
+    }
+    
+    //getter for number of resources
+    public int getnoOfResources() {
+    	return noOfResources;
+            }
+}
+    
+-------------------------- // ----------------------
+package myproject;
+
+
+public class Project {
+
+	public static void main(String[] args) {
+
+      	        
+//call project class method 	        
+		ProjectClass obj1 = new ProjectClass();
+        obj1.setprojectId(100);
+        obj1.setprojectName("Java Learning");
+        obj1.setprojectHead("Mr. X");
+        obj1.setnoOfResources(20);
+        
+     System.out.println(obj1.getprojectId()+"    "+obj1.getprojectName()+"    "+obj1.getprojectHead()+"    "+obj1.getnoOfResources());
+       
+
+	System.out.println(" successful");
+	}
+}
