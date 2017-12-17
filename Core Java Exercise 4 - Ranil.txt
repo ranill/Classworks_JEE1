@@ -1,0 +1,37 @@
+package bank;
+
+public class MyBank {
+
+	public static void main(String[] args) {
+		
+		//fire overloaded constructor 	        
+			
+			BankAccount obj1 = new BankAccount("1001", "My Bank Account");
+						
+		        
+		     System.out.println("after fire the constructer    " +obj1.accountNo+"    "+obj1.accountName+"    "+obj1.balance);
+		       
+	}
+
+}
+
+---------------------------- // ----------------------------
+package bank;
+
+public class BankAccount {
+
+	public int balance;
+	public String accountNo;
+    public String accountName; 
+  
+      
+   // construct
+    public BankAccount(String accountNo, String accountName) {
+    	this.accountNo=accountNo;
+    	this.accountName=accountName;
+    	this.balance=1000;
+   
+    	System.out.println(this.accountNo+"    "+this.accountName+"    "+this.balance);
+    }
+    
+}
